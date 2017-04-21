@@ -1,0 +1,5 @@
+global proc string mssHello ()
+{
+    python "import mss";  // Check can load python package
+    return "hello m-scripts";
+}
