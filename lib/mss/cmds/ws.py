@@ -5,11 +5,7 @@ from maya.cmds import scriptJob
 from mss.lib import ui, scene, ws
 
 
-__all__ = ['hello_mss', 'suggest_ws', 'activate_ws_suggestion']
-
-
-def hello_mss():
-    return 'Hello m-scripts'
+__all__ = ['suggest_ws', 'activate_ws_suggestion']
 
 
 def suggest_ws():
