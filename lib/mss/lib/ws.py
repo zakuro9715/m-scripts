@@ -19,5 +19,4 @@ def find_for(f):
     if 'workspace.mel' not in os.listdir(d):
         return find_for(d)
 
-    # Because maya's workspace command returns value with suffix '/', append '/' to return value. 
-    return d + '/' 
+    return d

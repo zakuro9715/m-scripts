@@ -16,8 +16,9 @@ def suggest_ws():
     new_ws = ws.find_for(f) 
     if new_ws == ws.current():
         return 
+   # return (new_ws, ws.current())
 
-    ws_name = path.basename(new_ws[:-1])  # Dont pass last '/' to basename
+    ws_name = path.basename(new_ws)
     message = 'Do you want to switch workspace to "{}"?'.format(ws_name)
     if ui.yes_no('Workspace Suggestion', message):
         ws.set_current(new_ws)
